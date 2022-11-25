@@ -49,7 +49,7 @@
 % 2. Hat diese Arbeit einen Sperrvermerk?
 %
 \newboolean{lockflag}
-\setboolean{lockflag}{false} % „false“, falls kein Sperrvermerk
+\setboolean{lockflag}{true} % „false“, falls kein Sperrvermerk
 
 %
 % 3. gescanntes Auftragsblatt einfügen
@@ -742,9 +742,8 @@
     \renewcommand{\footrulewidth}{0pt}%
 }
 
-\newcommand*{\TakeFourierOrnament}[1]{{%
-\fontencoding{U}\fontfamily{futs}\selectfont\char#1}}
-\newcommand*{\warning}{\TakeFourierOrnament{66}}
+% For special unicode characters such as \warning
+\usepackage{fourier-orns}
 
 \PassOptionsToPackage{hyphens}{url}
 \usepackage{hyperref}
