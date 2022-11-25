@@ -1,0 +1,42 @@
+\documentclass[12pt, a4paper, pagebackref]{article} % {article} or {scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage{ifthen}
+
+\input{config}
+\input{hyphenation}
+
+\begin{document}
+\numberwithin{lstlisting}{subsection}
+
+\selectlanguage{ngerman}
+
+% prelude %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{Roman}
+\pagestyle{plain}
+
+\include{formalities/title.tex}
+\include{formalities/toc.tex}
+
+% main part %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{arabic}
+\pagestyle{myfancy}
+
+\include{sections/introduction.tex}
+
+% ending stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\include{formalities/bibliography.tex}
+
+\appendix
+\pagenumbering{alph}
+
+\include{sections/appendix.tex}
+
+\pagestyle{plain}
+\include{formalities/declaration.tex}
+
+\end{document}

@@ -1,3 +1,7 @@
+## Custom ignores
+root.mtc
+root.pdf
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

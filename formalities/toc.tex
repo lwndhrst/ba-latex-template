@@ -1,0 +1,47 @@
+\doparttoc
+\dopartlof
+\dopartlot
+
+\makeatletter
+\renewcommand\@pnumwidth{1.25cm}
+\makeatother
+\cleardoublepage\pdfbookmark{\contentsname}{toc}\tableofcontents\label{refTOC}
+\cleardoublepage
+
+%\renewcommand{\listtheoremname}{Definitionen, Theoreme \& Beweise}
+%\cleardoublepage\phantomsection
+%\renewcommand\thmtformatoptarg[1]{: \enquote{#1}}
+%\addcontentsline{toc}{section}{Definitionen, Theoreme und Beweise}\listoftheorems[numwidth={3.7em},ignoreall,onlynamed={mydef,mytheorem,myproof}]
+
+\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+\cleardoublepage\phantomsection
+\makeatletter
+	\let\org@dottedtocline\@dottedtocline
+	\begingroup
+		\renewcommand*\@dottedtocline[3]{\org@dottedtocline{#1}{#2}{3.7em}}
+		\addcontentsline{toc}{section}{Abbildungsverzeichnis}\listoffigures
+	\endgroup
+	\renewcommand*\@dottedtocline[3]{\org@dottedtocline{#1}{#2}{#3}}
+\makeatother
+
+\renewcommand{\listtablename}{Tabellenverzeichnis}
+\cleardoublepage\phantomsection
+\makeatletter
+	\begingroup
+		\renewcommand*\@dottedtocline[3]{\org@dottedtocline{#1}{#2}{3.7em}}
+		\addcontentsline{toc}{section}{Tabellenverzeichnis}\listoftables
+	\endgroup
+	\renewcommand*\@dottedtocline[3]{\org@dottedtocline{#1}{#2}{#3}}
+\makeatother
+\cleardoublepage
+
+\renewcommand{\lstlistlistingname}{Quellcodeverzeichnis}
+\cleardoublepage\phantomsection
+\makeatletter
+	\begingroup
+		\renewcommand*\@dottedtocline[3]{\org@dottedtocline{#1}{#2}{3.7em}}
+		\addcontentsline{toc}{section}{Quellcodeverzeichnis}\lstlistoflistings
+	\endgroup
+	\renewcommand*\@dottedtocline[3]{\org@dottedtocline{#1}{#2}{#3}}
+\makeatother
+\cleardoublepage
