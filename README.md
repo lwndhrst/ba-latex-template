@@ -1,5 +1,5 @@
 # BA LaTeX-Template
-Edited version of Tenshi Hara's LaTeX-Template for students of BA Sachsen -- SSA
+Edited version of Tenshi Hara's LaTeX-Template for students of BA Sachsen - SSA
 Dresden
 
 by Leon Windhorst (2022)
