@@ -4,4 +4,4 @@ Dresden
 
 by Leon Windhorst (2022)
 
-Licensed under [GNU Public License, Version 3 (GPLv3)](/LICENSE)
+Licensed under [GNU General Public License, Version 3 (GPLv3)](/LICENSE)
