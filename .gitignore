@@ -1,6 +1,6 @@
 ## Custom ignores
-root.mtc
-root.pdf
+main.mtc
+main.pdf
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
