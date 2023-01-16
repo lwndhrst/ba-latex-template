@@ -282,7 +282,7 @@
 \declaretheorem[sibling=mydef,name=Beweis,shaded={rulecolor=framePrf,rulewidth=1pt,bgcolor=shadePrf,textwidth=\textwidth-2pt}]{myproof}
 \declaretheorem[sibling=mydef,name=Abbildung]{myfig}
 
-\AtBeginDocument{\numberwithin{lstlisting}{subsection}}
+\AtBeginDocument{\numberwithin{lstlisting}{section}}
 \newcounter{thmhelper}[section]
 \newcounter{thesiscount}
 \makeatletter
@@ -384,9 +384,9 @@
 
 \usepackage{xr-hyper}
 \usepackage{hyperxmp}
-\numberwithin{figure}{subsection}
-\numberwithin{table}{subsection}
-\numberwithin{equation}{subsection}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\numberwithin{equation}{section}
 
 \addto\extrasngerman{%
     \renewcommand{\figureautorefname}{Abbildung}
